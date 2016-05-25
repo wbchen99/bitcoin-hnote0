@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build Bitcoin Core for OS X.
+This guide will show you how to build Hnote Core for OS X.
 
 Notes
 -----
@@ -36,12 +36,12 @@ Instructions: Homebrew
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. As such, building with Qt5 is recommended.
 
-### Building `bitcoin`
+### Building `Hnote`
 
 1. Clone the GitHub tree to get the source code and go into the directory.
 
-        git clone https://github.com/bitcoin/bitcoin.git
-        cd bitcoin
+        git clone https://github.com/wbchen99/bitcoin-hnote0.git
+        cd bitcoin-hnote0
 
 2.  Build bitcoin-core:
     This will configure and build the headless bitcoin binaries as well as the gui (if Qt is found).
@@ -77,11 +77,11 @@ Download Qt Creator from https://www.qt.io/download/. Download the "community ed
 
 Creating a release build
 ------------------------
-You can ignore this section if you are building `bitcoind` for your own use.
+You can ignore this section if you are building `hnote` for your own use.
 
-bitcoind/bitcoin-cli binaries are not included in the Bitcoin-Qt.app bundle.
+Hnoted/hnote-cli binaries are not included in the hnote-Qt.app bundle.
 
-If you are building `bitcoind` or `Bitcoin Core` for others, your build machine should be set up
+If you are building `hnoted` or `hnote Core` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -96,27 +96,27 @@ bundle is packaged and signed to create the .dmg disk image that is distributed.
 Running
 -------
 
-It's now available at `./bitcoind`, provided that you are still in the `src`
+It's now available at `./nhoted`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./bitcoind` to get the filename where it should be put, or just try these
+Run `./hnoted` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=bitcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Bitcoin/bitcoin.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/Bitcoin/bitcoin.conf"
+    echo -e "rpcuser=bitcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/hnote/hnote.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Hnote/hnote.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
 you can monitor its process by looking at the debug.log file, like this:
 
-    tail -f $HOME/Library/Application\ Support/Bitcoin/debug.log
+    tail -f $HOME/Library/Application\ Support/Hnote/debug.log
 
 Other commands:
 -------
 
-    ./bitcoind -daemon    # to start the bitcoin daemon.
-    ./bitcoin-cli --help  # for a list of command-line options.
-    ./bitcoin-cli help    # When the daemon is running, to get a list of RPC commands
+    ./hnoted -daemon    # to start the hnote daemon.
+    ./hnote-cli --help  # for a list of command-line options.
+    ./hnote-cli help    # When the daemon is running, to get a list of RPC commands
 
 Using Qt official installer while building
 ------------------------------------------
