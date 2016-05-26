@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh Check already
 set -e
 srcdir="$(dirname $0)"
 cd "$srcdir"
