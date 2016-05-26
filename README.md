@@ -13,6 +13,7 @@ anyone, anywhere in the world. Hnote uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
 out collectively by the network. Hnote Core is the name of open source
 software which enables the use of this currency.
+
 歡迎進入「區塊鏈金融」共享共治美好社會
 
 人類文明歷史的演進，社會機制與人類行為創造的價值，一直以不同的形式進行交換，從貝殼到銀子，從銀票到黃金，從紙鈔到虛擬貨幣，貨幣創新（如比特幣）是科技進化社會體驗的成果，傳遞價值來自於交換過程的信用與風險溢價，金融科技的創新，將帶領我們進入區塊鏈的世界，「去中心化」的共享共治，在對等關係的信任機制下發展美好和諧社會。
@@ -22,6 +23,8 @@ software which enables the use of this currency.
 想像一下，當一個一個區塊串鏈起來，區塊鏈的世界通過去中心化的分散式節點，去信任方式集體維護數據庫的技術方案，區塊鏈方案讓參與系統中的任意多個節點，一段時間系統內全部信息交流數據，通過密碼學算法計算，記錄到一個數據塊，數據指紋鏈接一個一個數據塊和確認，由系統所有參與節點來同確認記錄，所有的節節點都是平等，您自己就是銀行，銀行就是您自己。
 
 區塊鏈的金融創新，我們引領了虛擬通貨的科技，開發了虛擬通貨憑證（或票券 或代幣 或虛擬信用)，h*Note 提供了交易憑證，讓您的交易在區塊鏈的虛擬網路中，得到如同真實世界銀行一樣所提供的交易安全，同時得到超過千萬節點的共同技術支持與交易確認。 
+
+區塊鏈金融 h*Note，通過區塊鏈科技分散式運算 (Distributed Computing)，將全部交易分散是處裡到網路的每一個節點，所有的管理規則取得共識後(h*Note Improvement Proposal:Consensus Rule)，每一個人都必須遵守，區塊鏈網路中的的利益由公平的激勵制度(Proof of Contribution)回饋網路的管理，實現共享共治的和諧美好社會，社會制度自定義，金融科技帶來創新的客戶體驗，也為共享共治社會帶來無窮盡的機會。
 
 For more information, as well as an immediately useable, binary version of
 the Hnote Core software, see https://Hnote.org/en/download, or read the
