@@ -373,8 +373,8 @@ bitcoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 bitcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-# bitcoin_cli_SOURCES += bitcoin-cli-res.rc
-bitcoin_cli_SOURCES += hnote-cli-res.rc
+ bitcoin_cli_SOURCES += bitcoin-cli-res.rc
+#bitcoin_cli_SOURCES += hnote-cli-res.rc
 endif
 
 bitcoin_cli_LDADD = \
