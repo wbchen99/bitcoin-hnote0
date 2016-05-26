@@ -1,12 +1,12 @@
 *.tar.gz
 
 *.exe
-src/bitcoin
-src/bitcoind
-src/bitcoin-cli
-src/bitcoin-tx
-src/test/test_bitcoin
-src/qt/test/test_bitcoin-qt
+src/hnote
+src/hnoted
+src/hnote-cli
+src/hnote-tx
+src/test/test_hnote
+src/qt/test/test_hnote-qt
 
 # autoreconf
 Makefile.in
@@ -74,12 +74,12 @@ src/qt/test/moc*.cpp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-bitcoin-qt
-Bitcoin-Qt.app
+hnote-qt
+Hnote-Qt.app
 
 # Unit-tests
 Makefile.test
-bitcoin-qt_test
+hnote-qt_test
 src/test/buildenv.py
 
 # Resources cpp
