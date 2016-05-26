@@ -62,13 +62,13 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-   bin_PROGRAMS += hnoted
-  # bin_PROGRAMS += bitcoind
+  # bin_PROGRAMS += hnoted
+   bin_PROGRAMS += bitcoind
 endif
 
 if BUILD_BITCOIN_UTILS
-    bin_PROGRAMS += hnote-cli hnote-tx
-  # bin_PROGRAMS += bitcoin-cli bitcoin-tx
+  #  bin_PROGRAMS += hnote-cli hnote-tx
+   bin_PROGRAMS += bitcoin-cli bitcoin-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
@@ -333,15 +333,15 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-# bitcoind_SOURCES = bitcoind.cpp
-bitcoind_SOURCES = hnoted.cpp
+ bitcoind_SOURCES = bitcoind.cpp
+# bitcoind_SOURCES = hnoted.cpp
 bitcoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 bitcoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 bitcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-#bitcoind_SOURCES += hnote-res.rc
-bitcoind_SOURCES += bitcoind-res.rc
+bitcoind_SOURCES += hnote-res.rc
+#bitcoind_SOURCES += bitcoind-res.rc
 endif
 
 bitcoind_LDADD = \
@@ -366,15 +366,15 @@ endif
 bitcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
 
 # bitcoin-cli binary #
-#bitcoin_cli_SOURCES = bitcoin-cli.cpp
-bitcoin_cli_SOURCES = hnote-cli.cpp
+bitcoin_cli_SOURCES = bitcoin-cli.cpp
+# bitcoin_cli_SOURCES = hnote-cli.cpp
 bitcoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 bitcoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 bitcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-bitcoin_cli_SOURCES += bitcoin-cli-res.rc
-#bitcoin_cli_SOURCES += hnote-cli-res.rc
+# bitcoin_cli_SOURCES += bitcoin-cli-res.rc
+bitcoin_cli_SOURCES += hnote-cli-res.rc
 endif
 
 bitcoin_cli_LDADD = \
@@ -386,8 +386,8 @@ bitcoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
 # bitcoin-tx binary #
-#bitcoin_tx_SOURCES = bitcoin-tx.cpp
-bitcoin_tx_SOURCES = hnote-tx.cpp
+bitcoin_tx_SOURCES = bitcoin-tx.cpp
+# bitcoin_tx_SOURCES = hnote-tx.cpp
 bitcoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 bitcoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 bitcoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
